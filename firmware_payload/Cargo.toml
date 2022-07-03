@@ -1,0 +1,24 @@
+[package]
+name = "firmware_payload"
+version = "0.1.0"
+authors = ["Rubens Brandao <git@rubens.io>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+#[dependencies]
+
+[[bin]]
+name = "mem_dump"
+path = "src/mem_dump.rs"
+
+[[bin]]
+name = "port_search"
+path = "src/port_search.rs"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+opt-level = 'z'
+lto = true
+panic = "abort"

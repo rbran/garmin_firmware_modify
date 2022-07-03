@@ -1,0 +1,8 @@
+GUPDATE.GCD
+firmware_payload/target/
+firmware_payload/.cargo/
+firmware_inject/target/
+out
+mem_dump
+
+
